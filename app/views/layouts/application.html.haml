@@ -1,0 +1,20 @@
+!!! 5
+
+-# <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+-# <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+-# <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+-# <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+%html.no-js{:lang => "en"}
+  = render "layouts/head"
+
+  %body{ class: "#{ controller.controller_name }" }
+    = render "layouts/chromeframe"
+    = render "layouts/header"
+
+  = render "layouts/flashes"
+  #main{ role: "main", class: "container" }
+    = yield
+
+  = render "layouts/footer"
+  = render "layouts/javascripts"

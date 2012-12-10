@@ -1,0 +1,14 @@
+#flash
+  - if flash[:alert]
+    .alert.alert-block
+      %i.icon-warning-sign &nbsp;
+      %p.message= flash[:alert]
+  - if flash[:notice]
+    .alert.alert-block.alert-success
+      %i.icon-ok-sign &nbsp;
+      %p.message= flash[:notice]
+  - if flash[:error]
+    .alert.alert-block.alert-error
+      %i.icon-minus-sign &nbsp;
+      %p.message= #flash[:error]
+
