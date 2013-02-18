@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'bootstrap-sass',          '~> 2.2.1.1'
 gem 'font-awesome-sass-rails', '~> 2.0.0.0'
+gem 'haml-rails',              '~> 0.4'
 gem 'jquery-rails',            '~> 2.1.4'
 gem 'rails',                   '~> 3.2.9'
 
