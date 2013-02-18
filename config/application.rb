@@ -62,6 +62,7 @@ module Strapping
     # Rails Generators
     config.generators do |g|
       g.template_engine :haml
+      g.template_engine :rspec
     end
   end
 end
