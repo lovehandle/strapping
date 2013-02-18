@@ -5,6 +5,8 @@ gem 'font-awesome-sass-rails', '~> 2.0.0.0'
 gem 'jquery-rails',            '~> 2.1.4'
 gem 'rails',                   '~> 3.2.9'
 
+gem 'sqlite3'
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
